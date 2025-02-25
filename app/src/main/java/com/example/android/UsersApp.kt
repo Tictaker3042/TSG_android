@@ -16,12 +16,8 @@ class UsersApp : Application() {
     lateinit var secureStorage: SecureStorage
 
     // Инициализация ViewModel
-    lateinit var registrationViewModel: RegistrationViewModel
     lateinit var entryViewModel: EntryViewModel
-    lateinit var productsViewModel: ProductsViewModel
-    lateinit var itemProductsViewModel: ItemProductsViewModel
-    lateinit var favoriteProductsViewModel: FavoriteProductsViewModel
-    lateinit var itemFavoriteProductsViewModel: ItemFavoriteProductsViewModel
+
 
     override fun onCreate() {
         super.onCreate()
@@ -39,11 +35,6 @@ class UsersApp : Application() {
         secureStorage = SecureStorage(this)
 
         // Инициализация ViewModel
-        registrationViewModel = RegistrationViewModel(repository)
         entryViewModel = EntryViewModel(repository, secureStorage)
-        productsViewModel = ProductsViewModel(repository)
-        itemProductsViewModel = ItemProductsViewModel(repository, baseUrl)
-        favoriteProductsViewModel = FavoriteProductsViewModel(repository)
-        itemFavoriteProductsViewModel = ItemFavoriteProductsViewModel(repository,baseUrl)
     }
 }

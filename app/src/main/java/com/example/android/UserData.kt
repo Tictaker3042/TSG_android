@@ -9,6 +9,12 @@ data class UserData(
     val id: Int = 0
 )
 
+data class FavoriteData(
+    val username: String?,
+    val product_id: Int
+)
 
-
+data class ToggleResponse(
+    val action: String
+)
 

@@ -9,6 +9,12 @@ class Repository(
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) {
 
+    suspend fun createUser(login: String, password: String) {
+        withContext(dispatcher) {
+            service.createUser(UserData(login, password))
+        }
+    }
+
     suspend fun loginUser(login: String, password: String) {
         withContext(dispatcher) {
             service.loginUser(UserData(login, password))

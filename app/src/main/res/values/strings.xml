@@ -9,4 +9,7 @@
     <string name="pass_text">Пароль</string>
     <string name="registration_text">Зарегистрироваться</string>
     <string name="have_account">Уже есть аккаунт? Войти</string>
+    <string name="back_button_description">Назад</string>
+    <string name="back_button">Назад</string>
+    <string name="to_login">Войти</string>
 </resources>

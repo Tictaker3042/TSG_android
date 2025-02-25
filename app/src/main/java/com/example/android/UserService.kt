@@ -7,10 +7,11 @@ import retrofit2.http.Path
 
 interface UserService {
 
+    @POST("/user/create/mob")
+    suspend fun createUser(@Body userData: UserData)
+
     @POST("/user/login")
     suspend fun loginUser(@Body userData: UserData)
 
-    @GET("/products/all")
-    suspend fun getProducts() : List<ProductData>
 
 }
