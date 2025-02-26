@@ -12,4 +12,7 @@
     <string name="back_button_description">Назад</string>
     <string name="back_button">Назад</string>
     <string name="to_login">Войти</string>
+    <string name="go_to_payments">Список последних платежей</string>
+    <string name="utility_indicators_text">Список коммунальных показателей</string>
+    <string name="main_activity_title">Главный экран</string>
 </resources>

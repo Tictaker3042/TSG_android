@@ -14,8 +14,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
 
-        binding.toLogin.setOnClickListener {
+        binding.toPayments.setOnClickListener {
             startActivity(Intent(this, EntryActivity::class.java))
+        }
+
+        binding.utilityIndicators.setOnClickListener {
+            startActivity(Intent(this, EntryActivity::class.java))
+        }
+
+        binding.backButton.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
     }
 }
