@@ -21,7 +21,8 @@
         android:contentDescription="@string/back_button_description"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <!-- Кнопка Перейти к Платежам -->
 
