@@ -17,8 +17,8 @@ class UsersApp : Application() {
 
     // Инициализация ViewModel
     lateinit var entryViewModel: EntryViewModel
-
-
+    lateinit var productsViewModel: ProductsViewModel
+    lateinit var itemProductsViewModel: ItemProductsViewModel
     override fun onCreate() {
         super.onCreate()
 
@@ -36,5 +36,8 @@ class UsersApp : Application() {
 
         // Инициализация ViewModel
         entryViewModel = EntryViewModel(repository, secureStorage)
+        productsViewModel = ProductsViewModel(repository)
+        itemProductsViewModel = ItemProductsViewModel(repository, baseUrl)
+
     }
 }

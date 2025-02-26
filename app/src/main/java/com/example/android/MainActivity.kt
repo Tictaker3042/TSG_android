@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.utilityIndicators.setOnClickListener {
-            startActivity(Intent(this, EntryActivity::class.java))
+            startActivity(Intent(this, ProductsActivity::class.java))
         }
 
         binding.backButton.setOnClickListener {

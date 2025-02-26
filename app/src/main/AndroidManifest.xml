@@ -18,6 +18,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductsViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".ItemProductsViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".ItemProductsActivity"
+            android:exported="false" />
+        <activity
             android:name=".EntryActivity"
             android:exported="true">
             <intent-filter>
