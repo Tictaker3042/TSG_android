@@ -7,14 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".ItemProductsActivity">
 
+    <!-- Квитанция -->
     <TextView
         android:id="@+id/documentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Квитанция:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/documentView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -23,19 +25,24 @@
         android:layout_height="wrap_content"
         android:text="Document Number"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/documentLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/documentLabel"
+        app:layout_constraintBottom_toBottomOf="@id/documentLabel" />
 
+    <!-- Сумма оплаты -->
     <TextView
         android:id="@+id/amountLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Сумма оплаты:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/amountView"
-        app:layout_constraintTop_toBottomOf="@id/documentView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/documentLabel" />
 
     <TextView
         android:id="@+id/amountView"
@@ -43,19 +50,24 @@
         android:layout_height="wrap_content"
         android:text="Amount"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/amountLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/documentView" />
+        app:layout_constraintTop_toTopOf="@id/amountLabel"
+        app:layout_constraintBottom_toBottomOf="@id/amountLabel" />
 
+    <!-- Владелец -->
     <TextView
         android:id="@+id/ownerLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Владелец:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/ownerView"
-        app:layout_constraintTop_toBottomOf="@id/amountView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel" />
 
     <TextView
         android:id="@+id/ownerView"
@@ -63,19 +75,24 @@
         android:layout_height="wrap_content"
         android:text="Owner"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/ownerLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/amountView" />
+        app:layout_constraintTop_toTopOf="@id/ownerLabel"
+        app:layout_constraintBottom_toBottomOf="@id/ownerLabel" />
 
+    <!-- Квартира -->
     <TextView
         android:id="@+id/roomLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Квартира:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/roomView"
-        app:layout_constraintTop_toBottomOf="@id/ownerView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ownerLabel" />
 
     <TextView
         android:id="@+id/roomView"
@@ -83,19 +100,24 @@
         android:layout_height="wrap_content"
         android:text="Room Number"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/roomLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ownerView" />
+        app:layout_constraintTop_toTopOf="@id/roomLabel"
+        app:layout_constraintBottom_toBottomOf="@id/roomLabel" />
 
+    <!-- Дата оплаты -->
     <TextView
         android:id="@+id/tranferLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Дата оплаты:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/tranferView"
-        app:layout_constraintTop_toBottomOf="@id/roomView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roomLabel" />
 
     <TextView
         android:id="@+id/tranferView"
@@ -103,19 +125,24 @@
         android:layout_height="wrap_content"
         android:text="Transfer Date"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/tranferLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/roomView" />
+        app:layout_constraintTop_toTopOf="@id/tranferLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tranferLabel" />
 
+    <!-- Горячая вода -->
     <TextView
         android:id="@+id/hotLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показания счётчика горячей воды:"
+        android:text="Горячая вода:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/hotView"
-        app:layout_constraintTop_toBottomOf="@id/tranferView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tranferLabel" />
 
     <TextView
         android:id="@+id/hotView"
@@ -123,19 +150,24 @@
         android:layout_height="wrap_content"
         android:text="Hot Water"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/hotLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tranferView" />
+        app:layout_constraintTop_toTopOf="@id/hotLabel"
+        app:layout_constraintBottom_toBottomOf="@id/hotLabel" />
 
+    <!-- Холодная вода -->
     <TextView
         android:id="@+id/coldLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показания счётчика холодной воды:"
+        android:text="Холодная вода:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/coldView"
-        app:layout_constraintTop_toBottomOf="@id/hotView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotLabel" />
 
     <TextView
         android:id="@+id/coldView"
@@ -143,19 +175,24 @@
         android:layout_height="wrap_content"
         android:text="Cold Water"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/coldLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hotView" />
+        app:layout_constraintTop_toTopOf="@id/coldLabel"
+        app:layout_constraintBottom_toBottomOf="@id/coldLabel" />
 
+    <!-- Электричество/день -->
     <TextView
         android:id="@+id/electricityDayLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показания счётчика дневного потребления электричества:"
+        android:text="Электричество/день:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/electricitydayView"
-        app:layout_constraintTop_toBottomOf="@id/coldView" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coldLabel" />
 
     <TextView
         android:id="@+id/electricitydayView"
@@ -163,18 +200,23 @@
         android:layout_height="wrap_content"
         android:text="Electricity Day"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/electricityDayLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/coldView" />
+        app:layout_constraintTop_toTopOf="@id/electricityDayLabel"
+        app:layout_constraintBottom_toBottomOf="@id/electricityDayLabel" />
 
+    <!-- Электричество/ночь -->
     <TextView
         android:id="@+id/electricityNightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показания счётчика ночного потребления электричества:"
+        android:text="Электричество/ночь:"
         android:textSize="18sp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintEnd_toStartOf="@id/electricitynightView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/electricitydayView" />
 
     <TextView
@@ -183,22 +225,23 @@
         android:layout_height="wrap_content"
         android:text="Electricity Night"
         android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/electricityNightLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/electricitydayView" />
+        app:layout_constraintTop_toTopOf="@id/electricityNightLabel"
+        app:layout_constraintBottom_toBottomOf="@id/electricityNightLabel" />
 
+    <!-- Кнопка "Назад" -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="200dp"
         android:layout_height="65dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/back_button"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.420"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
