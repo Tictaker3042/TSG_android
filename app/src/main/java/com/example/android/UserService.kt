@@ -13,7 +13,8 @@ interface UserService {
     @GET("/api/public_utilities")
     suspend fun getProducts() : List<UserData>
 
-    @GET("/api/public_utilities")
-    suspend fun getProduct(@Path(value = "product_id", encoded = true) id: Int) : UserData
+    @GET("/api/public_utilities/{room_number}")
+    suspend fun getProduct(@Path("room_number") roomNumber: Int): List<UserData>
+
 
 }

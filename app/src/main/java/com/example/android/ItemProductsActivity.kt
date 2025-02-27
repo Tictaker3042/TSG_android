@@ -18,10 +18,10 @@ class ItemProductsActivity : AppCompatActivity() {
 
         viewModel = (application as UsersApp).itemProductsViewModel
 
-        val product_id = intent.extras?.getInt("product_id") ?: return
+        val roomNumber = intent.extras?.getInt("room_number") ?: return
 
         // Получите данные о товаре
-        viewModel.getProductData(product_id, binding)
+        viewModel.getProductData(roomNumber, binding)
 
 
         binding.backButton.setOnClickListener {

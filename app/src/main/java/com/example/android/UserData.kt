@@ -10,6 +10,7 @@ data class UserData(
     val electricity_night: String,
     val hot_water: String,
     val owner: String,
+    @SerializedName("room_number")
     val room_number: Int,
     val transfer_date: String,
     val last_payment_date: String

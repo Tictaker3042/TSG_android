@@ -1,5 +1,6 @@
 package com.example.android
 
+import android.util.Log
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -18,14 +19,16 @@ class Repository(
 
     suspend fun getProduct(): List<UserData> {
         return withContext(dispatcher) {
-            return@withContext service.getProducts()
+            val products = service.getProducts()
+            Log.d("Repository", "Data from server: $products")
+            products
         }
     }
 
 
-    suspend fun getProduct(product_id: Int): UserData {
-        return withContext(dispatcher){
-            return@withContext service.getProduct(product_id)
+    suspend fun getProduct(roomNumber: Int): List<UserData> {
+        return withContext(dispatcher) {
+            return@withContext service.getProduct(roomNumber)
         }
     }
 

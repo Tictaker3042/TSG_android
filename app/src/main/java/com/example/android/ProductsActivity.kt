@@ -33,7 +33,7 @@ class ProductsActivity : AppCompatActivity() {
 
         val lambda: (id: Int) -> Unit = { id ->
             val intent = Intent(this, ItemProductsActivity::class.java).apply {
-                putExtra("product_id", id)
+                putExtra("room_number", id)
             }
             startActivity(intent)
         }
