@@ -19,4 +19,6 @@
     <string name="ticket">Квитанции об оплате</string>
     <string name="room">Квартира</string>
     <string name="rooms">Квартиры</string>
+    <string name="enter_account">Вход</string>
+    <string name="login">Логин</string>
 </resources>

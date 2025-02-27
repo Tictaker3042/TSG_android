@@ -1,6 +1,5 @@
 package com.example.android
 
-import SecureStorage
 import android.content.Intent
 import android.util.Log
 import android.widget.Toast
@@ -13,7 +12,6 @@ import kotlinx.coroutines.launch
 
 class EntryViewModel(
     private val repository: Repository,
-    private val secureStorage: SecureStorage, // Добавляем SecureStorage
     private val dispatcher: CoroutineDispatcher = Dispatchers.Main
 ) : ViewModel() {
 
@@ -34,15 +32,6 @@ class EntryViewModel(
         try {
             // Попытка входа
             repository.loginUser (login, password)
-
-            //очистка учетных данных старого пользователя
-            secureStorage.clearCredentials()
-            // Сохранение учетных данных
-            secureStorage.saveCredentials(login, password)
-
-            // Очистка полей ввода
-            binding.loginEditText.text?.clear()
-            binding.passwordEditText.text?.clear()
 
             // Переход на следующий экран
             val intent = Intent(binding.root.context, MainActivity::class.java)
