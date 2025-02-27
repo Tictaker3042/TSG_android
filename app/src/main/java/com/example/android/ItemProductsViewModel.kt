@@ -18,6 +18,13 @@ class ItemProductsViewModel(
             val userData = userDataList[0]  // Берем первый элемент массива
             binding.documentView.text = userData.document_number
             binding.amountView.text = userData.amount
+            binding.coldView.text = userData.cold_water
+            binding.hotView.text = userData.hot_water
+            binding.ownerView.text = userData.owner
+            binding.roomView.text = userData.room_number.toString()
+            binding.tranferView.text = userData.transfer_date
+            binding.electricitydayView.text = userData.electricity_day
+            binding.electricitynightView.text = userData.electricity_night
         } else {
             // Обработка случая, когда данные не найдены
             binding.documentView.text = "Данные не найдены"

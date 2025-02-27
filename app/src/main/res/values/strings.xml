@@ -16,4 +16,5 @@
     <string name="utility_indicators_text">Список коммунальных показателей</string>
     <string name="main_activity_title">Главный экран</string>
     <string name="transaction_string">Квитанция:</string>
+    <string name="ticket">Квитанции об оплате</string>
 </resources>
