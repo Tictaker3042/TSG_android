@@ -7,15 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".ItemProductsActivity">
 
-    <!-- Квитанция -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back_button_description"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/documentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
         android:text="Квитанция:"
         android:textSize="18sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,7 +123,7 @@
         android:id="@+id/tranferLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Дата оплаты:"
+        android:text="Дата последней оплаты:"
         android:textSize="18sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -231,17 +242,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/electricityNightLabel"
         app:layout_constraintBottom_toBottomOf="@id/electricityNightLabel" />
-
-    <!-- Кнопка "Назад" -->
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="200dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/back_button"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

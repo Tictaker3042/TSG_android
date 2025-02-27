@@ -19,7 +19,7 @@ class UsersListAdapter(
 
         fun bind(userData: UserData) {
             with(binding) {
-                documentView.text = userData.document_number
+                roomView.text = userData.room_number.toString()
 
                 root.setOnClickListener {
                     lambda(userData.room_number)

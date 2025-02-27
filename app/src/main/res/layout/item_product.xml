@@ -9,7 +9,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/documentView"
+            android:id="@+id/roomView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -30,7 +30,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:padding="8dp"
-            android:text="@string/transaction_string"
+            android:text="@string/room"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/document" />
+            app:srcCompat="@drawable/room" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

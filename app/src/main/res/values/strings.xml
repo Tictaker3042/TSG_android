@@ -17,4 +17,6 @@
     <string name="main_activity_title">Главный экран</string>
     <string name="transaction_string">Квитанция:</string>
     <string name="ticket">Квитанции об оплате</string>
+    <string name="room">Квартира</string>
+    <string name="rooms">Квартиры</string>
 </resources>
