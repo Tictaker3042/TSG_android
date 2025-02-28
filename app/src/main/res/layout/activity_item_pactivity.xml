@@ -21,12 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Квитанция -->
+
     <TextView
         android:id="@+id/documentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="468dp"
         android:text="Квитанция:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,5 +145,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/roomLabel"
         app:layout_constraintBottom_toBottomOf="@id/roomLabel" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="279dp"
+        android:layout_height="354dp"
+        app:srcCompat="@drawable/transaction_pic"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="86dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
