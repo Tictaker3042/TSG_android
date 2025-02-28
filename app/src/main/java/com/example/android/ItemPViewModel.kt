@@ -22,7 +22,7 @@ class ItemPViewModel(
             binding.amountView.text = userData.amount
             binding.ownerView.text = userData.owner
             binding.roomView.text = userData.room_number.toString()
-            binding.tranferView.text = userData.transfer_date
+            binding.tranferView.text = userData.last_payment_date
         } else {
             // Обработка случая, когда данные не найдены
             binding.documentView.text = "Данные не найдены"

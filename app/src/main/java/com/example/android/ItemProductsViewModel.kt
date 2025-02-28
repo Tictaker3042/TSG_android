@@ -22,6 +22,7 @@ class ItemProductsViewModel(
             binding.roomView.text = userData.room_number.toString()
             binding.electricitydayView.text = userData.electricity_day
             binding.electricitynightView.text = userData.electricity_night
+            binding.transferView.text = userData.transfer_date
         } else {
             // Обработка случая, когда данные не найдены
             binding.ownerView.text = "Данные не найдены"
