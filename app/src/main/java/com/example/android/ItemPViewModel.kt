@@ -13,10 +13,11 @@ class ItemPViewModel(
     private val baseUrl: String
 ) : ViewModel() {
 
-    fun getProductData(roomNumber: Int, binding: ActivityItemPactivityBinding) = viewModelScope.launch(Dispatchers.Main) {
-        val userDataList = repository.getProduct(roomNumber)
+    fun getInfoData(roomNumber: Int, binding: ActivityItemPactivityBinding) = viewModelScope.launch(Dispatchers.Main) {
+        val userDataList = repository.getInfo(roomNumber)
         if (userDataList.isNotEmpty()) {
             val userData = userDataList[0]  // Берем первый элемент массива
+            print(userData)
             binding.documentView.text = userData.document_number
             binding.amountView.text = userData.amount
             binding.ownerView.text = userData.owner

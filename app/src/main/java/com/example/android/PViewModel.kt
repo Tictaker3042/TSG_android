@@ -11,9 +11,9 @@ class PViewModel(
     private val dispatcher: CoroutineDispatcher = Dispatchers.Main
 ) : ViewModel() {
 
-    fun getProduct(adapter: UListAdapter) = viewModelScope.launch(dispatcher) {
+    fun getInfo(adapter: UListAdapter) = viewModelScope.launch(dispatcher) {
 
-        val products = repository.getProduct()
+        val products = repository.getInfo()
 
         adapter.update(products) // Обновляем данные адаптера
     }

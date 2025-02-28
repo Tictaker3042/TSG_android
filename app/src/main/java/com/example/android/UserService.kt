@@ -11,10 +11,15 @@ interface UserService {
     suspend fun loginUser(@Body loginData: LoginData)
 
     @GET("/api/public_utilities")
-    suspend fun getProducts() : List<UserData>
+    suspend fun getProduct() : List<UserData>
 
     @GET("/api/public_utilities/{room_number}")
     suspend fun getProduct(@Path("room_number") roomNumber: Int): List<UserData>
 
+    @GET("/api/latest_payments")
+    suspend fun getInfo() : List<UserData>
+
+    @GET("/api/latest_payments/{room_number}")
+    suspend fun getInfo(@Path("room_number") roomNumber: Int): List<UserData>
 
 }

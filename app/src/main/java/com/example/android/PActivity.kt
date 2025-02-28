@@ -43,7 +43,7 @@ class PActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         val itemPViewModel = (application as UsersApp).pViewModel
-        itemPViewModel.getProduct(adapter)
+        itemPViewModel.getInfo(adapter)
 
 
         binding.backButton.setOnClickListener {

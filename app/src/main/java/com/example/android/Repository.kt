@@ -19,7 +19,7 @@ class Repository(
 
     suspend fun getProduct(): List<UserData> {
         return withContext(dispatcher) {
-            val products = service.getProducts()
+            val products = service.getProduct()
             Log.d("Repository", "Data from server: $products")
             products
         }
@@ -29,6 +29,20 @@ class Repository(
     suspend fun getProduct(roomNumber: Int): List<UserData> {
         return withContext(dispatcher) {
             return@withContext service.getProduct(roomNumber)
+        }
+    }
+
+
+    suspend fun getInfo(): List<UserData> {
+        return withContext(dispatcher) {
+            val products = service.getInfo()
+            products
+        }
+    }
+
+    suspend fun getInfo(roomNumber: Int): List<UserData> {
+        return withContext(dispatcher) {
+            return@withContext service.getInfo(roomNumber)
         }
     }
 
