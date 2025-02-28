@@ -150,8 +150,10 @@
         android:id="@+id/imageView3"
         android:layout_width="279dp"
         android:layout_height="354dp"
-        app:srcCompat="@drawable/transaction_pic"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="86dp" />
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transaction_pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
