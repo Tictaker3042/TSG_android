@@ -19,66 +19,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/documentLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="168dp"
-        android:text="Квитанция:"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/documentView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Document Number"
-        android:textSize="18sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintStart_toEndOf="@id/documentLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/documentLabel"
-        app:layout_constraintBottom_toBottomOf="@id/documentLabel" />
-
-    <!-- Сумма оплаты -->
-    <TextView
-        android:id="@+id/amountLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Сумма оплаты:"
-        android:textSize="18sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/documentLabel" />
-
-    <TextView
-        android:id="@+id/amountView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Amount"
-        android:textSize="18sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintStart_toEndOf="@id/amountLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/amountLabel"
-        app:layout_constraintBottom_toBottomOf="@id/amountLabel" />
 
     <!-- Владелец -->
+
     <TextView
         android:id="@+id/ownerLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
         android:text="Владелец:"
         android:textSize="18sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/amountLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
     <TextView
         android:id="@+id/ownerView"
@@ -118,30 +71,6 @@
         app:layout_constraintTop_toTopOf="@id/roomLabel"
         app:layout_constraintBottom_toBottomOf="@id/roomLabel" />
 
-    <!-- Дата оплаты -->
-    <TextView
-        android:id="@+id/tranferLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Дата последней оплаты:"
-        android:textSize="18sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/roomLabel" />
-
-    <TextView
-        android:id="@+id/tranferView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Transfer Date"
-        android:textSize="18sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintStart_toEndOf="@id/tranferLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tranferLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tranferLabel" />
 
     <!-- Горячая вода -->
     <TextView
@@ -153,7 +82,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tranferLabel" />
+        app:layout_constraintTop_toBottomOf="@id/roomLabel" />
 
     <TextView
         android:id="@+id/hotView"

@@ -17,6 +17,9 @@ class UsersApp : Application() {
     lateinit var entryViewModel: EntryViewModel
     lateinit var productsViewModel: ProductsViewModel
     lateinit var itemProductsViewModel: ItemProductsViewModel
+
+    lateinit var pViewModel: PViewModel
+    lateinit var itemPViewModel: ItemPViewModel
     override fun onCreate() {
         super.onCreate()
 
@@ -36,6 +39,8 @@ class UsersApp : Application() {
         entryViewModel = EntryViewModel(repository)
         productsViewModel = ProductsViewModel(repository)
         itemProductsViewModel = ItemProductsViewModel(repository, baseUrl)
+        pViewModel = PViewModel(repository)
+        itemPViewModel = ItemPViewModel(repository, baseUrl)
 
     }
 }

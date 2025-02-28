@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.toPayments.setOnClickListener {
-            startActivity(Intent(this, EntryActivity::class.java))
+            startActivity(Intent(this, PActivity::class.java))
         }
 
         binding.utilityIndicators.setOnClickListener {
