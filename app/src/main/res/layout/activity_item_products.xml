@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="472dp"
         android:text="Владелец:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,5 +171,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/electricityNightLabel"
         app:layout_constraintBottom_toBottomOf="@id/electricityNightLabel" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="354dp"
+        android:layout_height="439dp"
+        app:srcCompat="@drawable/kpi"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="79dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
