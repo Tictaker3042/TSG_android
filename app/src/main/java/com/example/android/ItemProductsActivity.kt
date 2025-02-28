@@ -20,7 +20,7 @@ class ItemProductsActivity : AppCompatActivity() {
 
         val roomNumber = intent.extras?.getInt("room_number") ?: return
 
-        // Получите данные о товаре
+
         viewModel.getProductData(roomNumber, binding)
 
 
